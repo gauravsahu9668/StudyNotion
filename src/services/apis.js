@@ -1,6 +1,6 @@
 
 const BASE_URL=process.env.REACT_APP_BASE_URL
-const SEARVER_BASE_URL='http://localhost:8000/api/v1'
+const SEARVER_BASE_URL='https://study-notion-api-mu.vercel.app'
 export const categories ={
     CATEGORIES_API: SEARVER_BASE_URL + "/course/showallCategory",
     SENTOTP_API:SEARVER_BASE_URL+"/auth/sendotp",
