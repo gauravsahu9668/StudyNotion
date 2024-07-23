@@ -1,7 +1,9 @@
-.App {
+/* .App {
   text-align: center;
-}
-
+} */
+ html,body{
+  overflow-x: hidden;
+ }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +38,101 @@
     transform: rotate(360deg);
   }
 }
+.homepage_bg{
+  background: url("./Assets/Images/bghome.svg");
+}
+@media (width < 920px) {
+  .codeblock{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+  }
+  .codeblock1{
+    width: 100%;
+  }
+  .codeblock2{
+    width: 100%;
+  }
+  .codeblock3{
+    width: 100%;
+  }
+}
+@media (width<=800px) {
+  .jobskill{
+    display: flex;
+    flex-direction: column;
+  }
+  .jobskill1{
+    width: 100%;
+  }
+  .jobskill2{
+    width: 100%;
+  }
+}
+@media (width<=1090px) {
+  .imagebox{
+    display: none;
+  }
+  .inputbox{
+    width: 100%;
+  }
+  .signupinput{
+    width: 100%;
+  }
+  .signupimage{
+    display: none;
+  }
+}
+
+
+.cursivekrna{
+  font-family: "Playwrite FR Trad", cursive;
+  font-optical-sizing: auto;
+}
+.file {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+.file-input label {
+  display: block;
+  position: relative;
+  width: 120px;
+  height: 40px;
+  border-radius: 25px;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .2s ease-out;
+}
+.barCompleted{
+  background: #515050;
+}
+/* .list li{
+  list-style: disc;
+} */
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+.scroll-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.slick-dots li button:before {
+  font-size: 12px; /* Adjust the size of the dots */
+  color: blue; /* Change this to your desired color */
+}
+
+.slick-dots li.slick-active button:before {
+  color: red; /* Change this to your desired active color */
+}
+
+.slick-dots {
+  bottom: -25px; /* Adjust the position of the dots */
+}
+
